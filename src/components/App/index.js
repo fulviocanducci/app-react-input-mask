@@ -11,7 +11,7 @@ export default function App() {
   });
   function handleChange(e) {
     const { name, value } = e.target;
-    setItems({ ...items, [name]: value });
+    setItems((state) => ({ ...items, [name]: value }));
   }
   return (
     <div className="container mt-2">
